@@ -1,3 +1,16 @@
+:root {
+    --invalid-input: rgb(243, 42, 16);
+    --valid-input: rgb(7, 224, 7);
+}
+
+input:invalid {
+    border-color: var(--invalid-input);
+}
+
+input:valid {
+    border-color: var(--valid-input);
+}
+
 body {
     box-sizing: border-box;
     margin: 0;
@@ -69,7 +82,7 @@ button{
     margin-top: 40px;
     margin-left:  20px;
     padding: auto;
-    font: bold;
+    font-weight: bolder;
     border: none;
     height: 3rem;
     color: rgb(252, 252, 252);
